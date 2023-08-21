@@ -1,7 +1,12 @@
 import { Routes, Route } from "react-router-dom";
+import HomePage from "./HomePage";
 
 function App() {
-  return <div className="text-red-600">Hello</div>;
+  return (
+    <Routes>
+      <Route exact path="/" element={<HomePage />} />
+    </Routes>
+  );
 }
 
 export default App;
